@@ -1,1 +1,92 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+html body {
+  background-color: #232323;
+}
+
+header {
+  color: #232323;
+  background-color: silver;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  width: 100%;
+}
+
+header .left {
+  font-size: 2em;
+}
+
+header .right {
+  font-size: 1em;
+}
+
+nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 60px;
+  height: 60px;
+  width: 100%;
+  background-color: #26e090;
+}
+
+nav #addButton {
+  color: black;
+  width: 50px;
+  height: 50px;
+  margin: 0 5px 0 10px;
+}
+
+nav span {
+  font-size: 1.5em;
+  margin: 0 20px 0 5px;
+}
+
+section {
+  position: absolute;
+  top: 120px;
+  width: 100vw;
+  height: calc(100vh - 120px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section #content {
+  border-radius: 0.2em;
+  width: 98%;
+  height: 94%;
+  background-color: #edebeb;
+}
+/*# sourceMappingURL=main.css.map */
