@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Asset Manager</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/sanatize.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/auto-complete.css">
+<!-- kxYnVN9lNs7lqc5riO=57Y6gjEQMXc1zyaUtfrC//9A= -->
 </head>
 
 <body>
@@ -18,22 +19,30 @@
             Asset Manager
         </div>
         <div class="right">
-            Connection:<span id="connection"></span>
+            Status:<span id="connection"></span>
         </div>
     </header>
     <nav>
         <div id="addButton"><img src="img/54908.svg" width="50px" height="50px"></div>
-        <span>Add</span>
     </nav>
     <section>
         <div id="content">
-
+            <div id="innerContent">
+                Owner
+                <input type="text" name="searchBox" id="searchBox"><button id="searchButton">Search</button>
+                <hr>
+                <div id="data"></div>
+            </div>
         </div>
     </section>
     <footer>
 
     </footer>
-    <script src="main.js"></script>
+    <script src="https://portal.mhgi.net/heat/Modules/HEATAPI/HEATApiClient?clientId=assetmanager&clientKey=kxYnVN9lNs7lqc5riO=57Y6gjEQMXc1zyaUtfrC//9A="></script>
+    <script src="js/auto-complete.js"></script>
+    <script src="js/nameLoader.js"></script>
+    <script src="js/assetLoader.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

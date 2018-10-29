@@ -1,7 +1,10 @@
 $dark: #232323;
+
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+
 
 html body {
     background-color: $dark;
@@ -38,16 +41,20 @@ nav {
     background-color: #26e090;
 
     #addButton {
-        color: black;
+        fill: #b4d305
         width: 50px;
         height: 50px;
-        margin: 0 5px 0 10px;
+        margin: 0 20px 0 0;
     }
 
     span {
         font-size: 1.5em;
         margin: 0 20px 0 5px;
     }
+}
+
+hr {
+    margin: 20px 0 20px 0;
 }
 
 section {
@@ -65,5 +72,24 @@ section {
         width: 98%;
         height: 94%;
         background-color: #edebeb;
+
+        #innerContent {
+            padding: 20px;
+            font-size: 1em;
+            font-weight: 400;
+
+            input button {
+                padding: 5px;
+                width: 15%;
+                margin: 10px;
+                min-width: 100px;
+            }
+        }
     }
 }
+
+#connection {
+    margin-left: 5px;
+}
+
+
